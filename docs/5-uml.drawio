@@ -1,0 +1,342 @@
+<mxfile host="Electron" compressed="false" pages="2">
+  <diagram id="UML-диаграмма_классов" name="UML-диаграмма классов">
+    <mxGraphModel dx="1750" dy="929" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1250" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;" value="UML-диаграмма классов обучающей информационной онлайн-системы в области веб-разработки" vertex="1">
+          <mxGeometry height="40" width="1640" x="80" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;align=center;verticalAlign=top;spacingTop=5;fillColor=none;strokeColor=#000000;strokeWidth=1.2;perimeterSpacing=1;" value="&lt;b&gt;User&lt;/b&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;- id: UUID&lt;br&gt;- login: string&lt;br&gt;- passwordHash: string&lt;br&gt;- role: UserRole&lt;br&gt;- fullName: string&lt;br&gt;- email: string&lt;/div&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;+ register()&lt;br&gt;+ login()&lt;br&gt;+ updateProfile()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="190" width="270" x="60" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;align=center;verticalAlign=top;spacingTop=5;fillColor=none;strokeColor=#000000;strokeWidth=1.2;perimeterSpacing=1;" value="&lt;b&gt;Student&lt;/b&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;- phone: string&lt;br&gt;- personalDataStatus: string&lt;/div&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;+ enroll(course)&lt;br&gt;+ continueLearning()&lt;br&gt;+ viewProgress()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="270" x="60" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;align=center;verticalAlign=top;spacingTop=5;fillColor=none;strokeColor=#000000;strokeWidth=1.2;perimeterSpacing=1;" value="&lt;b&gt;Mentor&lt;/b&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;- specialization: string&lt;/div&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;+ reviewSubmission()&lt;br&gt;+ commentWork()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="135" width="250" x="360" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;align=center;verticalAlign=top;spacingTop=5;fillColor=none;strokeColor=#000000;strokeWidth=1.2;perimeterSpacing=1;" value="&lt;b&gt;Curator&lt;/b&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;- groupId: UUID&lt;/div&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;+ monitorProgress()&lt;br&gt;+ recordIssue()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="135" width="250" x="640" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;align=center;verticalAlign=top;spacingTop=5;fillColor=none;strokeColor=#000000;strokeWidth=1.2;perimeterSpacing=1;" value="&lt;b&gt;Methodist&lt;/b&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;- department: string&lt;/div&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;+ editCourse()&lt;br&gt;+ createAssignment()&lt;br&gt;+ createSandboxTask()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="260" x="930" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;align=center;verticalAlign=top;spacingTop=5;fillColor=none;strokeColor=default;strokeWidth=1.2;perimeterSpacing=1;" value="&lt;b&gt;ProgramManager&lt;/b&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;- programId: UUID&lt;/div&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;+ viewStatistics()&lt;br&gt;+ decideChanges()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="135" width="260" x="1440" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;align=center;verticalAlign=top;spacingTop=5;fillColor=none;strokeColor=#000000;strokeWidth=1.2;perimeterSpacing=1;" value="&lt;b&gt;Course&lt;/b&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;- id: UUID&lt;br&gt;- title: string&lt;br&gt;- description: text&lt;br&gt;- price: decimal&lt;br&gt;- status: CourseStatus&lt;/div&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;+ publish()&lt;br&gt;+ calculateProgress(student)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="190" width="270" x="410" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;align=center;verticalAlign=top;spacingTop=5;fillColor=none;strokeColor=#000000;strokeWidth=1.2;perimeterSpacing=1;" value="&lt;b&gt;CourseModule&lt;/b&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;- id: UUID&lt;br&gt;- title: string&lt;br&gt;- order: int&lt;/div&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;+ addLesson()&lt;br&gt;+ reorder()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="250" x="770" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;align=center;verticalAlign=top;spacingTop=5;fillColor=none;strokeColor=#000000;strokeWidth=1.2;perimeterSpacing=1;" value="&lt;b&gt;Lesson&lt;/b&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;- id: UUID&lt;br&gt;- title: string&lt;br&gt;- content: text&lt;br&gt;- isOpen: boolean&lt;br&gt;- videoUrl: string&lt;/div&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;+ view()&lt;br&gt;+ markCompleted()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="270" x="1090" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;align=center;verticalAlign=top;spacingTop=5;fillColor=none;strokeColor=#000000;strokeWidth=1.2;perimeterSpacing=1;" value="&lt;b&gt;Assignment&lt;/b&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;- id: UUID&lt;br&gt;- title: string&lt;br&gt;- description: text&lt;br&gt;- type: AssignmentType&lt;br&gt;- deadline: datetime&lt;/div&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;+ submit()&lt;br&gt;+ validateInput()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="270" x="1390" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;align=center;verticalAlign=top;spacingTop=5;fillColor=none;strokeColor=#000000;strokeWidth=1.2;perimeterSpacing=1;" value="&lt;b&gt;Payment&lt;/b&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;- id: UUID&lt;br&gt;- studentId: UUID&lt;br&gt;- courseId: UUID&lt;br&gt;- amount: decimal&lt;br&gt;- status: PaymentStatus&lt;/div&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;+ createInvoice()&lt;br&gt;+ confirm()&lt;br&gt;+ cancel()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="180" width="270" x="60" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;align=center;verticalAlign=top;spacingTop=5;fillColor=none;strokeColor=#000000;strokeWidth=1.2;perimeterSpacing=1;" value="&lt;b&gt;Enrollment&lt;/b&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;- id: UUID&lt;br&gt;- status: EnrollmentStatus&lt;br&gt;- startedAt: datetime&lt;br&gt;- completedAt: datetime&lt;/div&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;+ activate()&lt;br&gt;+ finish()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="260" x="370" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;align=center;verticalAlign=top;spacingTop=5;fillColor=none;strokeColor=#000000;strokeWidth=1.2;perimeterSpacing=1;" value="&lt;b&gt;Progress&lt;/b&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;- id: UUID&lt;br&gt;- percent: number&lt;br&gt;- completedLessons: int&lt;br&gt;- completedAssignments: int&lt;/div&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;+ recalculate()&lt;br&gt;+ getNextLesson()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="270" x="670" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;align=center;verticalAlign=top;spacingTop=5;fillColor=none;strokeColor=#000000;strokeWidth=1.2;perimeterSpacing=1;" value="&lt;b&gt;SandboxAttempt&lt;/b&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;- id: UUID&lt;br&gt;- sourceCode: text&lt;br&gt;- resultPreviewUrl: string&lt;br&gt;- status: AttemptStatus&lt;/div&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;+ runCode()&lt;br&gt;+ saveDraft()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="270" x="980" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;align=center;verticalAlign=top;spacingTop=5;fillColor=none;strokeColor=#000000;strokeWidth=1.2;perimeterSpacing=1;" value="&lt;b&gt;Submission&lt;/b&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;- id: UUID&lt;br&gt;- submittedAt: datetime&lt;br&gt;- status: SubmissionStatus&lt;br&gt;- files: File[]&lt;/div&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;+ sendToReview()&lt;br&gt;+ requireRevision()&lt;br&gt;+ accept()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="270" x="1290" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;align=center;verticalAlign=top;spacingTop=5;fillColor=none;strokeColor=#000000;strokeWidth=1.2;perimeterSpacing=1;" value="&lt;b&gt;Feedback&lt;/b&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;- id: UUID&lt;br&gt;- grade: number&lt;br&gt;- comment: text&lt;br&gt;- createdAt: datetime&lt;/div&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;+ publish()&lt;br&gt;+ update()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="270" x="1290" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;align=center;verticalAlign=top;spacingTop=5;fillColor=none;strokeColor=#000000;strokeWidth=1.2;perimeterSpacing=1;" value="&lt;b&gt;Certificate&lt;/b&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;- id: UUID&lt;br&gt;- number: string&lt;br&gt;- publicUrl: string&lt;br&gt;- issuedAt: datetime&lt;/div&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;+ issue()&lt;br&gt;+ verifyByUrl()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="260" x="370" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;align=center;verticalAlign=top;spacingTop=5;fillColor=none;strokeColor=#000000;strokeWidth=1.2;perimeterSpacing=1;" value="&lt;b&gt;MaterialComment&lt;/b&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;- id: UUID&lt;br&gt;- text: text&lt;br&gt;- isAnonymous: boolean&lt;br&gt;- createdAt: datetime&lt;/div&gt;&lt;hr/&gt;&lt;div align=&quot;left&quot; style=&quot;font-size:11px&quot;&gt;+ add()&lt;br&gt;+ moderate()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="270" x="980" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="21" edge="1" parent="1" source="4" style="endArrow=block;endFill=0;html=1;rounded=0;strokeWidth=1.1;fontSize=10;" target="3" value="наследует">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="22" edge="1" parent="1" source="5" style="endArrow=block;endFill=0;html=1;rounded=0;strokeWidth=1.1;fontSize=10;" target="3" value="наследует">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="23" edge="1" parent="1" source="6" style="endArrow=block;endFill=0;html=1;rounded=0;strokeWidth=1.1;fontSize=10;" target="3" value="наследует">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="24" edge="1" parent="1" source="7" style="endArrow=block;endFill=0;html=1;rounded=0;strokeWidth=1.1;fontSize=10;" target="3" value="наследует">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25" edge="1" parent="1" source="8" style="endArrow=block;endFill=0;html=1;rounded=0;strokeWidth=1.1;fontSize=10;" target="3" value="наследует">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="26" edge="1" parent="1" source="9" style="startArrow=diamond;startFill=1;endArrow=none;html=1;rounded=0;strokeWidth=1.2;fontSize=10;" target="10" value="1 содержит 1..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="27" edge="1" parent="1" source="10" style="startArrow=diamond;startFill=1;endArrow=none;html=1;rounded=0;strokeWidth=1.2;fontSize=10;" target="11" value="1 содержит 1..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="28" edge="1" parent="1" source="10" style="startArrow=diamond;startFill=1;endArrow=none;html=1;rounded=0;strokeWidth=1.2;fontSize=10;" target="12" value="1 содержит 0..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="29" edge="1" parent="1" source="4" style="endArrow=open;html=1;rounded=0;strokeWidth=1.2;fontSize=10;" target="13" value="создаёт 0..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="30" edge="1" parent="1" source="4" style="endArrow=open;html=1;rounded=0;strokeWidth=1.2;fontSize=10;" target="14" value="имеет 0..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="31" edge="1" parent="1" source="14" style="endArrow=open;html=1;rounded=0;strokeWidth=1.2;fontSize=10;" target="9" value="относится к 1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="32" edge="1" parent="1" source="14" style="startArrow=diamond;startFill=1;endArrow=none;html=1;rounded=0;strokeWidth=1.2;fontSize=10;" target="15" value="фиксирует 1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="33" edge="1" parent="1" source="15" style="endArrow=open;html=1;rounded=0;strokeWidth=1.2;fontSize=10;" target="19" value="при завершении выдаёт 0..1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="34" edge="1" parent="1" source="12" style="endArrow=open;html=1;rounded=0;strokeWidth=1.2;fontSize=10;" target="16" value="&lt;font&gt;выполняется через 0..*&lt;/font&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="35" edge="1" parent="1" source="4" style="endArrow=open;html=1;rounded=0;strokeWidth=1.2;fontSize=10;" target="16" value="создаёт попытку">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="36" edge="1" parent="1" source="16" style="endArrow=open;html=1;rounded=0;strokeWidth=1.2;fontSize=10;" target="17" value="передаётся на проверку">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="37" edge="1" parent="1" source="17" style="startArrow=diamond;startFill=1;endArrow=none;html=1;rounded=0;strokeWidth=1.2;fontSize=10;" target="18" value="получает 0..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="38" edge="1" parent="1" source="5" style="endArrow=open;html=1;rounded=0;strokeWidth=1.2;fontSize=10;" target="17" value="проверяет">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="39" edge="1" parent="1" source="7" style="endArrow=open;html=1;rounded=0;strokeWidth=1.2;fontSize=10;" target="9" value="разрабатывает">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="40" edge="1" parent="1" source="7" style="endArrow=open;html=1;rounded=0;strokeWidth=1.2;fontSize=10;" target="12" value="создаёт">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="41" edge="1" parent="1" source="6" style="endArrow=open;html=1;rounded=0;strokeWidth=1.2;fontSize=10;" target="15" value="контролирует">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="42" edge="1" parent="1" source="8" style="endArrow=open;html=1;rounded=0;strokeWidth=1.2;fontSize=10;" target="9" value="анализирует статистику">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="43" edge="1" parent="1" source="11" style="startArrow=diamond;startFill=1;endArrow=none;html=1;rounded=0;strokeWidth=1.2;fontSize=10;" target="20" value="имеет 0..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="44" edge="1" parent="1" source="3" style="endArrow=open;html=1;rounded=0;strokeWidth=1.2;fontSize=10;" target="20" value="оставляет">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="UML-диаграмма_последовательности" name="UML-диаграмма последовательности">
+    <mxGraphModel dx="2000" dy="1061" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;" value="UML-диаграмма последовательности: выполнение практического задания в песочнице и отправка на проверку" vertex="1">
+          <mxGeometry height="40" width="1580" x="60" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fontSize=13;fillColor=none;strokeColor=#000000;strokeWidth=1.2;perimeterSpacing=1;" value="&lt;b&gt;Обучающийся&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="150" x="45" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="4" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=1;strokeColor=#666666;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="135" as="sourcePoint" />
+            <mxPoint x="120" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fontSize=13;fillColor=none;strokeColor=default;strokeWidth=1.2;gradientColor=default;perimeterSpacing=1;" value="&lt;b&gt;Личный кабинет&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="150" x="255" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="6" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=1;strokeColor=#666666;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="135" as="sourcePoint" />
+            <mxPoint x="330" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fontSize=13;fillColor=none;strokeColor=#000000;strokeWidth=1.2;perimeterSpacing=1;" value="&lt;b&gt;Модуль курса&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="150" x="465" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="8" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=1;strokeColor=#666666;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="135" as="sourcePoint" />
+            <mxPoint x="540" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fontSize=13;fillColor=none;strokeColor=#000000;strokeWidth=1.2;perimeterSpacing=1;" value="&lt;b&gt;Песочница&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="150" x="675" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="10" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=1;strokeColor=#666666;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="750" y="135" as="sourcePoint" />
+            <mxPoint x="750" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fontSize=13;fillColor=none;strokeColor=#000000;strokeWidth=1.2;perimeterSpacing=1;" value="&lt;b&gt;Сервис прогресса&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="150" x="895" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="12" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=1;strokeColor=#666666;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="970" y="135" as="sourcePoint" />
+            <mxPoint x="970" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fontSize=13;fillColor=none;strokeColor=#000000;strokeWidth=1.2;perimeterSpacing=1;" value="&lt;b&gt;Сервис работ&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="150" x="1115" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="14" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=1;strokeColor=#666666;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1190" y="135" as="sourcePoint" />
+            <mxPoint x="1190" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fontSize=13;fillColor=none;strokeColor=#000000;strokeWidth=1.2;perimeterSpacing=1;" value="&lt;b&gt;Наставник&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="150" x="1335" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="16" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=1;strokeColor=#666666;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1410" y="135" as="sourcePoint" />
+            <mxPoint x="1410" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="17" parent="1" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="650" width="10" x="325" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="1" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="210" width="10" x="535" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="1" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="250" width="10" x="745" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="120" width="10" x="965" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="21" parent="1" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="150" width="10" x="1185" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="22" parent="1" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="90" width="10" x="1405" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="23" edge="1" parent="1" style="endArrow=block;html=1;rounded=0;strokeWidth=1.2;fontSize=11;" value="1. Открывает личный кабинет">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="190" as="sourcePoint" />
+            <mxPoint x="330" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="24" edge="1" parent="1" style="endArrow=block;html=1;rounded=0;strokeWidth=1.2;fontSize=11;" value="2. Запросить текущий прогресс и доступы">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="232" as="sourcePoint" />
+            <mxPoint x="970" y="232" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="25" edge="1" parent="1" style="endArrow=open;dashed=1;html=1;rounded=0;strokeWidth=1.1;fontSize=11;" value="3. Вернуть активный курс, модуль и следующее задание">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="970" y="274" as="sourcePoint" />
+            <mxPoint x="330" y="274" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="26" edge="1" parent="1" style="endArrow=block;html=1;rounded=0;strokeWidth=1.2;fontSize=11;" value="4. Открыть модуль и условие задания">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="316" as="sourcePoint" />
+            <mxPoint x="540" y="316" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="27" edge="1" parent="1" style="endArrow=open;dashed=1;html=1;rounded=0;strokeWidth=1.1;fontSize=11;" value="5. Показать материалы, видео и задание">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="358" as="sourcePoint" />
+            <mxPoint x="330" y="358" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="28" edge="1" parent="1" style="endArrow=block;html=1;rounded=0;strokeWidth=1.2;fontSize=11;" value="6. Открыть песочницу задания">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="400" as="sourcePoint" />
+            <mxPoint x="750" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="29" edge="1" parent="1" style="endArrow=block;html=1;rounded=0;strokeWidth=1.2;fontSize=11;" value="7. Пишет HTML/CSS/JS-код и запускает проверку">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="442" as="sourcePoint" />
+            <mxPoint x="750" y="442" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="30" edge="1" parent="1" style="endArrow=open;dashed=1;html=1;rounded=0;strokeWidth=1.1;fontSize=11;" value="8. Показать результат выполнения и ошибки">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="750" y="484" as="sourcePoint" />
+            <mxPoint x="120" y="484" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="31" edge="1" parent="1" style="endArrow=block;html=1;rounded=0;strokeWidth=1.2;fontSize=11;" value="9. Сохраняет черновик или итоговый вариант">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="526" as="sourcePoint" />
+            <mxPoint x="750" y="526" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="32" edge="1" parent="1" style="endArrow=block;html=1;rounded=0;strokeWidth=1.2;fontSize=11;" value="10. Зафиксировать попытку выполнения">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="750" y="568" as="sourcePoint" />
+            <mxPoint x="970" y="568" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="33" edge="1" parent="1" style="endArrow=open;dashed=1;html=1;rounded=0;strokeWidth=1.1;fontSize=11;" value="11. Попытка сохранена">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="970" y="610" as="sourcePoint" />
+            <mxPoint x="750" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="34" edge="1" parent="1" style="endArrow=block;html=1;rounded=0;strokeWidth=1.2;fontSize=11;" value="12. Отправляет работу на проверку">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="652" as="sourcePoint" />
+            <mxPoint x="1190" y="652" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="35" edge="1" parent="1" style="endArrow=block;html=1;rounded=0;strokeWidth=1.2;fontSize=11;" value="13. Обновить статус задания и прогресс">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1190" y="694" as="sourcePoint" />
+            <mxPoint x="970" y="694" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="36" edge="1" parent="1" style="endArrow=block;html=1;rounded=0;strokeWidth=1.2;fontSize=11;" value="14. Уведомить наставника о новой работе">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1190" y="736" as="sourcePoint" />
+            <mxPoint x="1410" y="736" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="37" edge="1" parent="1" style="endArrow=block;html=1;rounded=0;strokeWidth=1.2;fontSize=11;" value="15. Открывает работу и оставляет оценку/комментарий">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1410" y="778" as="sourcePoint" />
+            <mxPoint x="1190" y="778" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="38" edge="1" parent="1" style="endArrow=block;html=1;rounded=0;strokeWidth=1.2;fontSize=11;" value="16. Сохранить результат проверки">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1190" y="820" as="sourcePoint" />
+            <mxPoint x="970" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="39" edge="1" parent="1" style="endArrow=open;dashed=1;html=1;rounded=0;strokeWidth=1.1;fontSize=11;" value="17. Обновить статус в личном кабинете">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="970" y="862" as="sourcePoint" />
+            <mxPoint x="330" y="862" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="40" edge="1" parent="1" style="endArrow=open;dashed=1;html=1;rounded=0;strokeWidth=1.1;fontSize=11;" value="18. Показать статус, оценку и комментарий">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="904" as="sourcePoint" />
+            <mxPoint x="120" y="904" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="41" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fontSize=12;fillColor=none;strokeColor=#000000;strokeWidth=1.2;perimeterSpacing=1;align=center;" value="&lt;b&gt;Альтернативный ход&lt;/b&gt;&lt;br&gt;&lt;div&gt;Если доступ к курсу не активирован или оплата не подтверждена, личный кабинет показывает статус заявки и предлагает завершить оплату. Если код в песочнице содержит ошибку, система показывает результат выполнения и позволяет сохранить черновик без отправки на проверку.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="800" x="380" y="930" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
